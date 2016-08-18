@@ -9,9 +9,9 @@
 class testController {
 
     function show() {
-        $model = new testModel();
+        $model = M('test');
         $data = $model->get();
-        $view = new testView();
+        $view = V('test');
         $view->display($data);
     }
 }
